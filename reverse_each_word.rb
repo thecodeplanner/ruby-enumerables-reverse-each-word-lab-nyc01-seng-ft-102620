@@ -1,12 +1,18 @@
+
+require 'pry'
+
 def reverse_each_word(string)
   array = string.split(" ")
   new_string =[]
   array.collect do |word|
+    binding.pry 
     new_string << word.reverse
 end
 new_string.join(" ")
 end 
 end 
+
+
 
 #take in string
 #turn string into array 
